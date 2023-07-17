@@ -4,7 +4,7 @@
 
 	.boxInfo {
 		display: flex;
-		flex: 1;
+		flex: 3;
 		flex-direction: column;
 		justify-content: space-between;
 
@@ -15,14 +15,27 @@
 		}
 	}
 	.chartInfo {
-		flex: 2;
 		display: flex;
+		flex: 2;
 		flex-direction: column;
 		justify-content: space-between;
 
 		.chart {
 			height: 100%;
 			width: 100%;
+		}
+		.texts {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+
+			.percentage {
+				font-weight: bold;
+				font-size: 20px;
+			}
+			.duration {
+				font-size: 14px;
+			}
 		}
 	}
 }
