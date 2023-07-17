@@ -1,0 +1,51 @@
+.navbar {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	width: 100%;
+
+	.logo {
+		align-items: center;
+		display: flex;
+		font-weight: bold;
+		gap: 10px;
+	}
+	.icons {
+		align-items: center;
+		display: flex;
+		gap: 20px;
+
+		.notification {
+			position: relative;
+
+			span {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				background-color: red;
+				border-radius: 50%;
+				color: white;
+				font-size: 12px;
+				height: 16px;
+				position: absolute;
+				right: -10px;
+				top: -10px;
+				width: 16px;
+			}
+		}
+
+		.user {
+			align-items: center;
+			display: flex;
+			gap: 10px;
+
+			img {
+				border-radius: 50%;
+				height: 26px;
+				object-fit: cover;
+				width: 26px;
+			}
+		}
+	}
+}
