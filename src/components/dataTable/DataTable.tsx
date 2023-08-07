@@ -1,4 +1,4 @@
-import { DataGrid, GridColDef, GridToolbar, GridValueGetterParams } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import './dataTable.scss';
 import { Link } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ const DataTable = (props:Props) => {
 		renderCell:(params)=>{
 			return (
 				<div className='action'>
-					<Link to={`${props.slug}/${params.row.id}`}>
+					<Link to={`/${props.slug}/${params.row.id}`}>
 						<img src="/view.svg" alt='' />
 					</Link>
 					<div className="delete" onClick={()=>handleDelete(params.row.id)}>
